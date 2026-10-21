@@ -1,29 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="#CC99FF"
+    android:padding="20dp">
 
+    <!-- Bagian Header (Sapaan) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello honoo "
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFFFF"/>
+
+        <TextView
+            android:id="@+id/tvnamasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello purr"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:textColor="#2D3436"/>
+
+    </LinearLayout>
+
+    <!-- Bagian Kotak Informasi (Card Statistik) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <!-- Kartu 1: Tugas Pending -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tugas peding"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvjumlahTugas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#D63031"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Kartu 2: Rata-Rata Nilai -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#3054D6"
+            android:padding="16dp"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rata . RataNilai"
+                android:textColor="#161515"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvRataNIlai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="88,5"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#E91E63"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Label Tugas Terbaru -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World "
-        android:textSize="38sp"
+        android:text="tugas terbaru"
+        android:textSize="16sp"
         android:textStyle="bold"
-        android:gravity=""
-        />
+        android:textColor="#303BD6"
+        android:layout_marginBottom="12dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- Konten Detail Tugas Terbaru -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Yuhu"
-        android:textSize="38sp"
-        android:textStyle="bold"
-        android:gravity=""
-        />
+        android:orientation="vertical"
+        android:background="#4CAF50"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="object oriented progaming(0dp)"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="buat program crud sederhana"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>
