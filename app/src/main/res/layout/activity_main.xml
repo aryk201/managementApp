@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#CC99FF"
+    android:background="#C2E0F9"
     android:padding="20dp">
 
     <!-- Bagian Header (Sapaan) -->
@@ -21,7 +24,7 @@
             android:text="Hello honoo "
             android:textSize="38sp"
             android:textStyle="bold"
-            android:textColor="#FFFFFFFF"/>
+            android:textColor="#020000"/>
 
         <TextView
             android:id="@+id/tvnamasiswa"
@@ -75,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:background="#3054D6"
+            android:background="#FFFFFF"
             android:padding="16dp"
             android:layout_marginStart="8dp">
 
@@ -100,6 +103,56 @@
 
     </LinearLayout>
 
+    <!--banner pengumuan dengan frame layout-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="24dp">
+
+        <!--layer 1 : background lapisan belakang-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0984E3"/>
+
+        <!-- layer 2 : teks pengumuman lapisan depan-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PENGUMUMAN PENTING"
+                android:textSize="11sp"
+                android:textColor="#DFE6E9"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ujian kompetensi RPL dimulai jumat ini"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--tombol untuk ke halaman from-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tombolFrom"
+        android:text="Tambah tugas"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0984E3"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
     <!-- Label Tugas Terbaru -->
     <TextView
         android:layout_width="wrap_content"
@@ -115,7 +168,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#4CAF50"
+        android:background="#FFFFFF"
         android:padding="16dp">
 
         <TextView
@@ -124,7 +177,7 @@
             android:text="object oriented progaming(0dp)"
             android:textSize="14sp"
             android:textStyle="bold"
-            android:textColor="#FF9800"/>
+            android:textColor="#040000"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -136,3 +189,4 @@
     </LinearLayout>
 
 </LinearLayout>
+</FrameLayout>
